@@ -14,6 +14,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 name = "cloudflare-docker-proxy"
 routes = [
   { pattern = "docker.laihome.eu.org", custom_domain = true },
+  { pattern = "docker.laihome.eu.org", custom_domain = true },
+  { pattern = "quay.laihome.eu.org", custom_domain = true },
+  { pattern = "gcr.laihome.eu.org", custom_domain = true },
+  { pattern = "k8s-gcr.laihome.eu.org", custom_domain = true },
+  { pattern = "k8s.laihome.eu.org", custom_domain = true },
+  { pattern = "laihome.eu.org", custom_domain = true },
+  { pattern = "cloudsmith.laihome.eu.org", custom_domain = true },
 ]
 
 [env.production.vars]
